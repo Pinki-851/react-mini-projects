@@ -1,11 +1,12 @@
-import "./App.css";
-import { LearnUseReducer } from "./components/useReducer";
+import "../src/styles/App.css";
+import { JiraBoard } from "./components/jira-board";
+// import { LearnUseReducer } from "./components/useReducer";
 
 function App() {
   return (
     <>
-      Hello world
-      <LearnUseReducer />{" "}
+      {/* <LearnUseReducer /> */}
+      <JiraBoard />
     </>
   );
 }
