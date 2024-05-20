@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Column } from "./column";
+import { Column } from "./Column";
 
 
 export function JiraBoard() {
@@ -16,10 +16,10 @@ export function JiraBoard() {
     }
 
     function handleDrop(e,tragetCol){
-    console.log('e-drop',e);
+    // console.log('e-drop',e);
     const task= e.dataTransfer.getData("task")
     const sourceCol= e.dataTransfer.getData("sourceCol")
-    console.log('tsk-col',task,sourceCol,tragetCol);
+    // console.log('tsk-col',task,sourceCol,tragetCol);
     if(tragetCol!==sourceCol){
         switch(tragetCol){
             case "TODO":
@@ -63,7 +63,7 @@ export function JiraBoard() {
 
     console.log('toDoData',toDoData);
 
-  return <div>
+  return <div >
     <h1 className="my-[1rem]">Jira Board</h1>
     <div className="w-full gap-[1rem] flex justify-center" >
 
